@@ -40,7 +40,7 @@ terjedt, a teljes játékot 2 további fejezettel kiegészítve lehetett megvás
 az id Software-től postán keresztül. A játék frissített változata boltokban is
 megjelent Ultimate Doom néven \aref{fig:borito} ábrán látható borítóval, amely
 egy újabb, negyedik fejezetet is tartalmazott. Folytatása, a Doom II: Hell on
-Earth 1994-ben jelent meg.
+Earth 1994-ben jelent meg. \cite[Bevezető]{doomgame}
 
 \begin{figure}[h]
     \centering
@@ -62,6 +62,7 @@ Doom klónoknak hívják, amelyek közül a legismertebb a Duke Nukem 3D. A ját
 könnyen lehet módosítani a WAD fájlban tárolt adatok átszerkesztésével. A játék
 véres, erőszakos és pokoli ábrázolásai viták tárgyát képezték, és egyike volt
 azon játékoknak, amely miatt az ESRB korhatár besorolás létrejött.
+\cite[Bevezető]{doomgame}
 
 \section{A játék menete}
 
@@ -79,6 +80,7 @@ amelyekkel lezárt ajtókat tud a játékos kinyitni a tovább haladáshoz, vagy
 titkos részeken található gömbök, amelyek egy extra képességgel ruházzák fel a
 játékost (pl. sebezhetetlenség, láthatatlanság), továbbá az ellenségek,
 kapcsolók, ajtók, lépcsők, liftek, hullák és robbanásveszélyes hordók.
+\cite[Játékmenet]{doomgame}
 
 \section{A játék tartalma}
 
@@ -103,6 +105,7 @@ A játékban nyolc fegyvert használhat a játékos:
         magyarul: \textqq{Kibaszott Nagy Fegyver 9000}, nagy teljesítményű
         plazmafegyver, plazma cellákat használ lőszerként.
 \end{itemize}
+\cite[Fegyverek]{doomgame}
 
 \subsection{Ellenségek}
 
@@ -134,6 +137,7 @@ A játékban tíz ellenség található:
         főgonosza, egy pókalkatú, mechanikus végtagokkal rendelkező agy
         kinézetű démon, golyószóróval támad. Nem jelenik meg az első fejezetben.
 \end{itemize}
+\cite[Ellenségek]{doomgame}
 
 \chapter{Doom technikai megvalósítása}
 \label{chap:engine}
@@ -145,6 +149,7 @@ néven vált ismertté.} technikailag nagy előrelépésnek számított megjelen
 A fejlesztők egyaránt törekedtek a minél szebb látványvilág megjelenítésére és a
 gépigény alacsony szinten tartására. Mivel az akkori hardvereken túl lassú lett
 volna egy valódi, teljesen 3D megjelenítés, ál-3D grafikát kapott a játék.
+\cite[A játék motorja]{doomgame}
 
 Az id Software előző játékához, a Wolfenstein 3D-hez képest több újítás került a
 motorba. Megjelentek a magassági különbségek: míg a Wolfenstein 3D-ben minden
@@ -163,7 +168,7 @@ hangzás is elősegítette, amelyből következtetni lehetett nagyjából, hogy 
 és milyen távolságból jöhetnek a hangok. Például a játékos figyelmét
 felkelthetik a szörnyek röfögései és morgásai, mert hallhatja, hogy honnan
 számíthat ellenségre. Az ajtók nyitódását és záródását is meghallhatja, ezáltal
-rátalálhat különböző titkos rejtekhelyekre.
+rátalálhat különböző titkos rejtekhelyekre. \cite[A játék motorja]{doomgame}
 
 A Doom pályái nem teljesen háromdimenziósak, mert belülről egy síkon vannak
 ábrázolva (ez látható a játék beépített térképén), a terek falakkal és
@@ -173,19 +178,20 @@ fölött, nem lehet tetszőleges szögben szétnézni a fellépő nagy torzulás
 Előnye viszont a gyorsaság, amit BSP\footnote{Binary Space Partitioning,
 bináris térfelosztás.} alapú rendereléssel ér el, továbbá előnyös a 2D
 pályaábrázolás a beépített térkép rajzolásakor is.
+\cite[A játék motorja]{doomgame}
 
 Fontos újítás a motorban a moduláris megközelítés, ami megengedi a játék
 tartalmának lecserélését a WAD adatfájlok cseréjével. Az előd Wolfenstein 3D-ben
 nem volt meg ez a lehetőség, bár a játék fanatikusai rájöttek, hogyan tudnak
 saját pályákat készíteni. A Doom ezzel szemben megadta a lehetőséget, ami
-jelentősen növelte a népszerűségét.
+jelentősen növelte a népszerűségét. \cite[A játék motorja]{doomgame}
 
 \section{A játék pályáinak felépítése}
 
 A Doom összes pályája 2D-s. Ezt jól mutatja az is, hogy a pályákon nem lehet két
 szektort elhelyezni egymás fölé vagy alá. Azonban ennek a korlátnak van egy
 előnye is, mégpedig a térkép megjelenítése, amely megmutatja, hogy éppen hol áll
-a játékos a pályán.
+a játékos a pályán. \cite[A Doom pályáinak felépítése]{doomengine}
 
 \subsection{Alapvető objektumok}
 
@@ -195,7 +201,7 @@ amelyeket \textqq{linedefs}-nek nevezünk. Minden egyes linedefs-nek van egy vag
 két oldala, amelyeket \textqq{sidedefs}-nek nevezünk. Ha a sidedefs-eket
 csoportba foglaljuk, akkor \textqq{polygon}-okat, azaz sokszögeket alkotnak,
 amelyeket csoportos nevükön szektoroknak hívunk. A szektorok képviselik a pálya
-részletes területeit.
+részletes területeit. \cite[Alapvető objektumok]{doomengine}
 
 \subsection{Szektorok}
 
@@ -204,7 +210,7 @@ magassága, a szektor fényereje, illetve a padló és a plafon mintája. Több
 különböző világosságú szektor létrehozásához, különböző fényerejű szektorokat
 kell létrehozni. Ezért van az, hogy amíg egy egyoldalas linedef egy térbeli
 \textqq{falnak} látszódik, addig a szektorok között egy kétoldalas linedef egy
-\textqq{hídnak} látszódik.
+\textqq{hídnak} látszódik. \cite[Szektorok]{doomengine}
 
 \subsection{Sidedefek}
 
@@ -216,7 +222,7 @@ kicsit összetettebb a textúrázási folyamata. Az alsó és a felső textúrá
 a helyekre kerülnek fel, ahol a két szektor között szintkülönbség van (például
 egy lépcső, amelyre alsó textúra kerül). Egy sidedefnek szintén egy középső
 textúrája van, bár nem mindig: mivel ez felel a függő textúrákért is, mint
-például az égboltért.
+például az égboltért. \cite[Sidedefs]{doomengine}
 
 \section{További Doom-motort használó játékok}
 
@@ -268,6 +274,7 @@ például az égboltért.
                 \end{itemize}
         \end{itemize}
 \end{itemize}
+\cite[A motort használó játékok]{doomengine}
 
 \chapter{Extra feladatok}
 
@@ -327,8 +334,12 @@ karakterláncot. További rekurzióval kapcsolatos információért lásd
 
 \begin{thebibliography}{2}
     \addcontentsline{toc}{chapter}{\bibname}
-    \bibitem{algo} Geda Gábor: Adatszerkezetek és Algoritmusok, Eger, 2013,
-    Eszterházy Károly Főiskola
+    \bibitem{doomgame} \textsc{Wikipédia}: \emph{Doom (videójáték, 1993)}.\\
+    \textsc{url}: \url{https://hu.wikipedia.org/wiki/Doom_(videójáték,_1993)}
+    \bibitem{doomengine} \textsc{Wikipédia}: \emph{Doom-motor}.\\\textsc{url}:
+    \url{https://hu.wikipedia.org/wiki/Doom-motor}
+    \bibitem{algo} \textsc{Geda Gábor}: \emph{Adatszerkezetek és Algoritmusok},
+    Eger, 2013, Eszterházy Károly Főiskola.
 \end{thebibliography}
 
 \includepdf{nyilatkozat/nyilatkozat.pdf}
