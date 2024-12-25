@@ -2,20 +2,11 @@
 \usepackage[T1]{fontenc}
 \PassOptionsToPackage{defaults=hu-min}{magyar.ldf}
 \usepackage[magyar]{babel}
-\usepackage{mathtools,amssymb,amsthm,pdfpages}
+\usepackage{amsthm,listings,array,pdfpages}
 \footnotestyle{rule=fourth}
-
-\newtheorem{tetel}{Tétel}[chapter]
-\theoremstyle{definition}
-\newtheorem{definicio}[tetel]{Definíció}
-\newtheorem{pelda}[tetel]{Példa}
-\theoremstyle{remark}
-\newtheorem{megjegyzes}[tetel]{Megjegyzés}
-
-\usepackage{listings}
-\usepackage{array}
 \setlength{\extrarowheight}{2pt}
-
+\theoremstyle{definition}
+\newtheorem{pelda}{Példa}[chapter]
 \begin{document}
 
 \institute{Matematikai és Informatikai Intézet}
@@ -349,4 +340,5 @@ lásd \acite[71.~oldal]{algo} forrást.
 \end{thebibliography}
 
 \includepdf{nyilatkozat/nyilatkozat.pdf}
+
 \end{document}
