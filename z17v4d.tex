@@ -8,6 +8,7 @@
 \newtheorem{tetel}{Tétel}[chapter]
 \theoremstyle{definition}
 \newtheorem{definicio}[tetel]{Definíció}
+\newtheorem{pelda}[tetel]{Példa}
 \theoremstyle{remark}
 \newtheorem{megjegyzes}[tetel]{Megjegyzés}
 
@@ -281,9 +282,14 @@ például az égboltért. \cite[Sidedefs]{doomengine}
 \section{Programkód}
 
 \lstinputlisting[numbers=left,language=C,label={lst:reverse}]{reverse.c}
-\Aref{lst:reverse} programkód rekurzió felhasználásával fordít meg egy
-karakterláncot. További rekurzióval kapcsolatos információért lásd
-\acite[71.~oldal]{algo} forrást.
+\begin{pelda}
+    \label{pld:reverse}
+    \Aref{lst:reverse} programkód rekurzió felhasználásával fordít meg egy
+    végjellel ellátott karakterláncot.
+\end{pelda}
+
+További \aref{pld:reverse} példához hasonló, rekurzióval kapcsolatos példákért
+lásd \acite[71.~oldal]{algo} forrást.
 
 \section{Táblázat}
 
