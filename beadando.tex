@@ -11,7 +11,7 @@
 
 \institute{Matematikai és Informatikai Intézet}
 \title{\LaTeX beadandó}
-\author{Zana Domán\\Programtervező informatikus}
+\author{Zana Domán\\Programtervező informatikus FOSZ}
 \supervisor{Hekk Elek\\Tanársegéd}
 \city{Eger}
 \date{2025}
@@ -23,8 +23,8 @@
 
 \section{A játék bemutatása}
 
-A Doom (magyarul \textqq{Végzet})\footnote{A játék címét \emph{A pénz színe}
-című film egyik jelenete inspirálta.} belső nézetű lövöldözős játék, amelyet
+A Doom\footnote{A játék címét \emph{A pénz színe} című film egyik jelenete
+inspirálta.} (magyarul \textqq{Végzet}) belső nézetű lövöldözős játék, amelyet
 1993-ban adott ki az id Software MS-DOS operációs rendszerre. A játékos a
 Doomguy becenevet viselő katonát irányítja, akinek megfertőzött zombikat és
 pokolból szabadult démonokat kell legyőznie. Az első fejezet shareware formában
@@ -44,7 +44,7 @@ Earth 1994-ben jelent meg. \cite[Bevezető]{doomgame}
 A Doom az egyik legfontosabb játék a videójátékok történelmében, gyakran említik
 a valaha volt legjobb és legfontosabb játékként, technikai újításai nagy
 hatással voltak a 3D, belső nézetű, illetve többszemélyes játékokra. Világszerte
-3.5 millió darabot adtak el, és több mint 10 és 20 millió közötti ember
+3,5 millió darabot adtak el, és több mint 10 és 20 millió közötti ember
 játszotta a megjelenése utáni első két évben, becslések szerint több gépre volt
 feltelepítve, mint a Microsoft akkori új operációs rendszere, a Windows 95. A
 nagy sikernek és technikai újításainak köszönhetően (lásd \aref{chap:engine}.
@@ -64,15 +64,15 @@ ellenségeket. A játék fejezetekre van bontva, egy fejezeten belül 9 szint
 található, amelyből egy titkos. A következő szintre az adott szint végének
 elérésével lehet eljutni, amely általában egy liftben található kapcsoló, vagy
 egy teleport kapu. A szinteken titkos helyek is előfordulnak, amelyek
-eljutásához a játékosnak meg kell keresni az ahhoz vezető bejáratot, ez lehet
+felfedezéséhez a játékosnak meg kell keresni az ahhoz vezető bejáratot, ez lehet
 egy más színezésű fal, vagy egy rejtett kapcsoló által kinyitott ajtó, illetve
 ezeken keresztül lehet titkos szintekre is eljutni. Előfordulnak továbbá
-elszórva felvehető tárgyak, mint pl. elsősegély doboz, lőszer, fegyver, kulcsok
-amelyekkel lezárt ajtókat tud a játékos kinyitni a tovább haladáshoz, vagy
-titkos részeken található gömbök, amelyek egy extra képességgel ruházzák fel a
-játékost (pl. sebezhetetlenség, láthatatlanság), továbbá az ellenségek,
-kapcsolók, ajtók, lépcsők, liftek, hullák és robbanásveszélyes hordók.
-\cite[Játékmenet]{doomgame}
+elszórva felvehető tárgyak, mint például elsősegély doboz, lőszer, fegyver,
+kulcsok amelyekkel lezárt ajtókat tud a játékos kinyitni a tovább haladáshoz,
+vagy titkos részeken található gömbök, amelyek egy extra képességgel ruházzák
+fel a játékost (például sebezhetetlenség, láthatatlanság), továbbá az
+ellenségek, kapcsolók, ajtók, lépcsők, liftek, hullák és robbanásveszélyes
+hordók. \cite[Játékmenet]{doomgame}
 
 \section{A játék tartalma}
 
@@ -87,15 +87,14 @@ A játékban nyolc fegyvert használhat a játékos:
     \item \textbf{Pisztoly}: alap fegyver, tölténytárat használ lőszerként.
     \item \textbf{Sörétes puska}: egycsövű sörétes puska, sörétes lőszert
         használ lőszerként.
-    \item \textbf{Golyószóró}: Gatling-típusú forgótáras gépfegyver,
+    \item \textbf{Golyószóró}: Gatling típusú forgótáras gépfegyver,
         tölténytárat használ lőszerként.
     \item \textbf{Rakétavető}: vállról indítható rakétavető, rakétákat használ
         lőszerként.
     \item \textbf{Plazma puska}: gyorstüzelésű plazmafegyver, plazma cellákat
         használ lőszerként.
-    \item \textbf{BFG 9000}: teljes nevén: \textqq{Big Fucking Gun 9000},
-        magyarul: \textqq{Kibaszott Nagy Fegyver 9000}, nagy teljesítményű
-        plazmafegyver, plazma cellákat használ lőszerként.
+    \item \textbf{BFG 9000}: teljes nevén \textqq{Big Fucking Gun 9000}, nagy
+        teljesítményű plazmafegyver, plazma cellákat használ lőszerként.
 \end{itemize}
 \cite[Fegyverek]{doomgame}
 
@@ -114,20 +113,19 @@ A játékban tíz ellenség található:
         állnak ki, tűzlabdák dobálásával vagy karmolással támad.
     \item \textbf{Pinky Demon}: Rózsaszín, tömzsi, izmos testalkatú de
         emberméretű démon, harapással támad, a leggyorsabb ellenség a játékban.
-    \item \textbf{Spectre}: A Demon láthatatlan változata.
+    \item \textbf{Spectre}: A Pinky Demon láthatatlan változata.
     \item \textbf{Cacodemon}: Piros színű, gömbölyű, repülő démon, tűzlabdák
-        lövésével vagy harapással támad. Nem jelenik meg az első fejezetben.
+        lövésével vagy harapással támad.
     \item \textbf{Lost Soul}: Repülő, tűzben lángoló koponya szarvakkal, a
-        játékosnak nekirepülve harapással támad. Nem jelenik meg az első
-        fejezetben.
+        játékosnak nekirepülve harapással támad.
     \item \textbf{Baron of Hell}: Rózsaszín, magas és izmos testalkatú démon,
         zöld plazmák dobálásával vagy karmolással támad.
     \item \textbf{Cyberdemon}: A második fejezet főgonosza, egy emberalkatú,
         bőrszínű, magas és izmos testalkatú démon pár mechanikus végtaggal,
-        rakéták kilövésével támad. Nem jelenik meg az első fejezetben.
+        rakéták kilövésével támad.
     \item \textbf{Spider Mastermind}: A harmadik fejezet egyben a játék
         főgonosza, egy pókalkatú, mechanikus végtagokkal rendelkező agy
-        kinézetű démon, golyószóróval támad. Nem jelenik meg az első fejezetben.
+        kinézetű démon, golyószóróval támad.
 \end{itemize}
 \cite[Ellenségek]{doomgame}
 
@@ -146,7 +144,7 @@ volna egy valódi, teljesen 3D megjelenítés, ál-3D grafikát kapott a játék
 Az id Software előző játékához, a Wolfenstein 3D-hez képest több újítás került a
 motorba. Megjelentek a magassági különbségek: míg a Wolfenstein 3D-ben minden
 padló és plafon sík volt, a Doom-ban tetszőlegesen változhatott a magasságuk. A
-Doom szakított az előd labirintus-jellegével is, pályatervezéskor nem szükséges
+Doom szakított az előd labirintus jellegével is, pályatervezéskor nem szükséges
 már derékszögűnek lennie a falak csatlakozásának, ezenkívül megjelentek a
 külterek is a pályákon. Futás vagy gyaloglás közben a fegyver himbálózása
 mozgásérzetet kelt a játékosban: a Wolfenstein 3D-ben a főszereplő karjai nem
@@ -164,7 +162,7 @@ rátalálhat különböző titkos rejtekhelyekre. \cite[A játék motorja]{doomg
 
 A Doom pályái nem teljesen háromdimenziósak, mert belülről egy síkon vannak
 ábrázolva (ez látható a játék beépített térképén), a terek falakkal és
-magassági különbségekkel voltak elválasztva. A mai, 3D vertexekre épülő
+magassági különbségekkel voltak elválasztva. A mai, 3D vertex-ekre épülő
 geometriával szemben több megkötés is van: például nem lehet két szoba egymás
 fölött, nem lehet tetszőleges szögben szétnézni a fellépő nagy torzulások miatt.
 Előnye viszont a gyorsaság, amit BSP\footnote{Binary Space Partitioning,
@@ -189,8 +187,8 @@ a játékos a pályán. \cite[A Doom pályáinak felépítése]{doomengine}
 
 Az alapvető egység a \textqq{vertex}, vagyis a csúcspont, amely egy egyszerű
 2D-s pontot ábrázol. A csúcspontok a line-okba, azaz a vonalakba kapcsolódnak,
-amelyeket \textqq{linedefs}-nek nevezünk. Minden egyes linedefs-nek van egy vagy
-két oldala, amelyeket \textqq{sidedefs}-nek nevezünk. Ha a sidedefs-eket
+amelyeket \textqq{linedef}-nek nevezünk. Minden egyes linedef-nek van egy vagy
+két oldala, amelyeket \textqq{sidedef}-nek nevezünk. Ha a sidedef-eket
 csoportba foglaljuk, akkor \textqq{polygon}-okat, azaz sokszögeket alkotnak,
 amelyeket csoportos nevükön szektoroknak hívunk. A szektorok képviselik a pálya
 részletes területeit. \cite[Alapvető objektumok]{doomengine}
@@ -204,17 +202,17 @@ kell létrehozni. Ezért van az, hogy amíg egy egyoldalas linedef egy térbeli
 \textqq{falnak} látszódik, addig a szektorok között egy kétoldalas linedef egy
 \textqq{hídnak} látszódik. \cite[Szektorok]{doomengine}
 
-\subsection{Sidedefek}
+\subsection{Sidedef-ek}
 
-A sidedefek tartalmazzák a falak textúráját: ezek teljesen elkülönülnek a padló
-és a plafon textúráitól. Minden egyes sidedefnek három textúrája van, amelyeket
+A sidedef-ek tartalmazzák a falak textúráját: ezek teljesen elkülönülnek a padló
+és a plafon textúráitól. Minden egyes sidedef-nek három textúrája van, amelyeket
 középső, felső és alsó textúráknak hívunk. Egy egyoldalú linedef csak egy
-középső textúrát használhat egy fal textúrázásához. Egy kétoldalú linedefnek egy
-kicsit összetettebb a textúrázási folyamata. Az alsó és a felső textúrák azokra
-a helyekre kerülnek fel, ahol a két szektor között szintkülönbség van (például
-egy lépcső, amelyre alsó textúra kerül). Egy sidedefnek szintén egy középső
-textúrája van, bár nem mindig: mivel ez felel a függő textúrákért is, mint
-például az égboltért. \cite[Sidedefs]{doomengine}
+középső textúrát használhat egy fal textúrázásához. Egy kétoldalú linedef-nek
+egy kicsit összetettebb a textúrázási folyamata. Az alsó és a felső textúrák
+azokra a helyekre kerülnek fel, ahol a két szektor között szintkülönbség van
+(például egy lépcső, amelyre alsó textúra kerül). Egy sidedef-nek szintén egy
+középső textúrája van, bár nem mindig: mivel ez felel a függő textúrákért is,
+mint például az égboltért. \cite[Sidedefs]{doomengine}
 
 \section{További Doom-motort használó játékok}
 
@@ -289,14 +287,15 @@ lásd \acite[71.~oldal]{algo} forrást.
     \footnotesize
     \begin{tabular}{|>{\bfseries}l|l|l|l|l|l|}
         \cline{2-6}
-        \multicolumn{1}{c|}{} & \multicolumn{5}{c|}{\textbf{Órarend}}\\
+        \multicolumn{1}{c|}{} &
+        \multicolumn{5}{c|}{\textbf{Órarend}}\\
         \cline{2-6}
         \multicolumn{1}{c|}{} &
         \multicolumn{1}{c|}{\textbf{Hétfő}} &
         \multicolumn{1}{c|}{\textbf{Kedd}} &
         \multicolumn{1}{c|}{\textbf{Szerda}} &
         \multicolumn{1}{c|}{\textbf{Csütörtök}} &
-        \multicolumn{1}{c|}{\textbf{Péntek}} \\
+        \multicolumn{1}{c|}{\textbf{Péntek}}\\
         \hline
         08.00--08.45 &
         matematika &
